@@ -52,6 +52,6 @@ resource "aws_security_group" "mysg" {
 resource "aws_instance" "my-ec2" {
   ami               = var.ami
   instance_type     = var.instance_type
-  availability_zone = "ap-south-1a"
+  availability_zone = var.availability_zone
   security_groups   = ["aws_security_group.mysg"]
 }

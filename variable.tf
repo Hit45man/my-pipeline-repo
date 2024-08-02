@@ -1,8 +1,12 @@
 variable "instance_type" {
-    default = "t2.small"
+    type = string
 }
 
 variable "ami" {
-    default = "ami-03fa4afc89e4a8a09"
+    type = string
 }
 
+
+variable "availability_zone" {
+   type = string
+}
